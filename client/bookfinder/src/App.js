@@ -14,7 +14,7 @@ const App = () => {
     console.log(`Searching for book title: ${bookData}`); // Debugging statement
     try {
       const response = await axios.get(
-        `http://localhost:5000/search?title=${bookData}`
+        `https://book-finder-rt6v.onrender.com/search?title=${bookData}`
       );
       const data = response.data;
       console.log(data); // Debugging statement
